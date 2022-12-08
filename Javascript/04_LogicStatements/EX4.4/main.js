@@ -1,31 +1,28 @@
-let randomNumber = Math.random();
-randomNumber = randomNumber * 10;
-RandomNumber = Math.floor(randomNumber);
+
+let randomNumber = Math.floor(Math.random() * 6);
 console.log(randomNumber);
 
-let userInput = prompt("Ask your question")
+let userInput = prompt("Ask your question.");
 let answer = "";
-switch (randomNumber) {
+
+switch(randomNumber) {
     case 0:
         answer = "Yes";
-break;
-case 1:
+        break;
+    case 1:
         answer = "No";
-break;
-case 2:
-        answer = "Maybe";
-break;
-case 3:
-        answer = "Annother question";
-break;
-case 4:
-        answer = "You are cool";
-break;
-case 5:
-        answer = "Are you good";
-break;
-default:
-    break;
+        break;
+    case 2:
+    case 3:
+        answer = "Someday";
+        break;
+    case 4:
+        answer = "Never";
+        break;
+    case 5:
+        answer = "Keep Dreming";
+        break;
 }
+
 console.log(userInput);
 console.log(answer);

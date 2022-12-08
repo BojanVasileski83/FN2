@@ -2,9 +2,9 @@
 let userInput = prompt("What's your age?");
 //let userAge = Number(userInput);
 
-console.log(typeof userInput, UserInput);
+console.log(typeof userInput, userInput);
 let userAge = Number(userInput);
-console.log(typeof userInput, UserInput);
+console.log(typeof userInput, userInput);
 
 let message = "";
 
