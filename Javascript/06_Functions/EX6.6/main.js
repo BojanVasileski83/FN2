@@ -1,19 +1,10 @@
-let myVar = "1000";
+function factorial(nr) {
+    if (nr === 0) {
+        return 1;
+    }
+    return nr * factorial(--nr);
+}
 
-(function() {
-    let myVar = "Local 1000";
-})();
+console.log(factorial(5));
+console.log(factorial(7));
 
-let resultVar = (function () {
-    let myVar = "Return Local 1000";
-    return myVar;
-})();
-
-console.log(resultVar);
-console.log(myVar);
-
-(function(par1) {
-    myVar = par1;
-})("Global 1000")
-
-console.log(myVar);
