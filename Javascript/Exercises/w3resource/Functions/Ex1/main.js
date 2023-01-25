@@ -19,6 +19,13 @@ let reverseArrOfX = arrayOfX.reverse();
 let reverseStringOfx = reverseArrOfX.join("");
 return parseInt(reverseStringOfx);
 }
+
+function ReverseNumber2(x) {
+    let y = x.toString();
+    let arrayOfX = stringOfX.split("").reverse().join("");
+    return parseInt(y);
+    }
+
 console.log(ReverseNumber(541566));
 console.log(ReverseNumber(123456));
 console.log(ReverseNumber(987654));
