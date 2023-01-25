@@ -1,28 +1,25 @@
 /*
-2. Write a JavaScript conditional statement to find the sign of product of three numbers. Display an alert box with the specified sign.
-Sample numbers : 3, -7, 2
-Output : The sign is -
+17. Write a JavaScript function to calculate the sum of values in an array.
+Test Data :
+console.log(sum([1,2,3]));
+console.log(sum([100,-200,3]));
+console.log(sum([1,2,'a',3]));
+Output :
+6
+-97
+6
 */
 
-let num1 = 3;
-let num2 = -7;
-let num3 = 2;
-
-let product = num1 + num2 + num3;
-
-if (product > 0) {
-    console.log("The sign is +");
-} else {
-    console.log("The sign is -");
+function sum(arr) {
+  let sumOfArr = 0;
+  for (const element of arr) {
+    if(!isNaN(element)) {
+      sumOfArr += element;
+    }
+  }
+  return sumOfArr;
 }
 
-var x,y,chr;
-for(x=1; x <=6; x++)
-{
-   for (y=1; y < x; y++)
-     {
-    chr=chr+("*");        
-      }
- console.log(chr);
- chr='';    
-}
+console.log(sum([1,2,3]));
+console.log(sum([100,-200,3]));
+console.log(sum([1,2,'a',3]));
