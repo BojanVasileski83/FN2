@@ -14,4 +14,4 @@ paragraph.style.backgroundColor = "lightgray";
 
 console.log(typeof document.URL);
 
-paragrarh.innerText = document.URL;
+paragraph.innerText = document.URL;
