@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice_3</title>
+</head>
+<body>
+    <h1 style="color:pink" class="pink">Just an example</h1>
+    <p id="one" class="example">Hi!</p>
+    <p id="two" class="example">Hi!</p>
+    <p id="three" class="something">Hi!</p>
+
+<script>
+    let two = document.getElementById("two");
+    console.dir(two);
+    two.style.color = "red";
+    
+    let tree = document.getElementsByTagName("p").item(2);
+    console.log(tree);
+    tree.style.backgroundColor = "lightblue";
+
+    let one = document.getElementsByTagName("p").namedItem("one");
+    console.dir(one);
+    one.style.border = "1px solid black";
+    
+    
+    let h1 = document.getElementsByClassName("pink").item(0);
+    console.dir(h1);
+
+</script>
+</body>
+</html>
