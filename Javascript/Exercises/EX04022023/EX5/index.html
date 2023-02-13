@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            padding: 10px 2px;
+            margin-bottom: 20px;
+            font-size: 3em;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size:1.2em;
+        }
+
+        body {
+            font-family: arial;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">Hello</div>
+    <button class="add">Change CSS style</button>
+</body>
+
+<script>
+   const button = document.querySelector("button");
+    button.addEventListener("click", () => {
+      const element = document.querySelector(".demo");
+      element.style.backgroundColor = "red";
+      element.innerHTML = "TEST";
+    });
+</script>
+</html>
